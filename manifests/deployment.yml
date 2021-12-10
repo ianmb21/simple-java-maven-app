@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "ianmbakswk4-33f8"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "ianmbakswk4-33f8"
+  template:
+    metadata:
+      labels:
+        app: "ianmbakswk4-33f8"
+    spec:
+      containers:
+        - name: "ianmbakswk4-33f8"
+          image: "ianmbcontainerregistry.azurecr.io/ianmbakswk4"
+          ports:
+          - containerPort: 80
